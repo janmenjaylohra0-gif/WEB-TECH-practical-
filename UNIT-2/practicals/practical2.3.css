@@ -1,0 +1,31 @@
+body{
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 5px;
+  background-color: #fffbea;
+}
+
+.highlight {
+  color: #d63384;
+  font-weight: bold;
+  background-color: #ffe066;
+  padding: 3px 6px;
+  border-radius: 4px;
+}
+
+#special {
+  background: linear-gradient(135deg, #f9e076, #fcd34d);
+  padding: 15px;
+  border-radius: 8px;
+  color: #6a0dad;
+  box-shadow: 0 4px 6px rgba(106, 13, 173, 0.2);
+}
+
+div span {
+  color: #ff66cc;
+  font-style: italic;
+}
+
+h1, p {
+  text-align: center;
+  color: #6a0dad;
+}

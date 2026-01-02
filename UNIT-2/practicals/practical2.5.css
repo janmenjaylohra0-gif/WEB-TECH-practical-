@@ -1,0 +1,130 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background-color: #fff7ed;
+  color: #374151;
+}
+
+.header {
+  background: linear-gradient(90deg, #ef4444, #f97316);
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  background-color: #f97316;
+}
+
+.navbar span {
+  text-align: center;
+  padding: 1rem;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffe4e6;
+}
+
+.hero {
+  background: url('https://upload.wikimedia.org/wikipedia/commons/1/15/Red_Apple.jpg') no-repeat center/cover;
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.hero-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: rgba(0,0,0,0.5);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.card {
+  background: white;
+  border: 2px solid #ef4444;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ef4444;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  display: block;
+  font-size: 1rem;
+}
+
+.footer {
+  background-color: #ef4444;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Tablet view */
+@media (min-width: 600px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .card {
+    flex: 1 1 calc(50% - 1.5rem);
+  }
+}
+
+/* Desktop view */
+@media (min-width: 1024px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .card {
+    flex: 1;
+    margin: 0 1rem;
+  }
+}
+.footer p {
+  margin: 0;
+}
