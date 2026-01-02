@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Manipulation Demo</title>
+</head>
+<body>
+  <h2 id="title">Original Title</h2>
+  <p id="paragraph">This is the original paragraph text.</p>
+  <div class="box">Box content here</div>
+
+  <button onclick="manipulateDOM()">Click to Manipulate DOM</button>
+
+  <script>
+    function manipulateDOM() {
+      let titleElement = document.getElementById("title");
+      titleElement.innerHTML = "Title changed using getElementById()";
+
+      let paraElement = document.querySelector("#paragraph");
+      paraElement.innerHTML = "Paragraph updated using querySelector()";
+
+      let boxElement = document.querySelector(".box");
+      boxElement.innerHTML = "<strong>Box content replaced using innerHTML</strong>";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User-defined Functions & Scope</title>
+</head>
+<body>
+  <h2>JavaScript Functions and Scope Demonstration</h2>
+  <pre id="output"></pre>
+
+  <script>
+    let output = "";
+
+    function calculateSum(a, b) {
+      return a + b;
+    }
+
+    let sumResult = calculateSum(5, 7);
+    output += "Sum of 5 and 7: " + sumResult + "\n\n";
+
+    function scopeDemo() {
+      if (true) {
+        var x = "I am var";
+        let y = "I am let";
+        const z = "I am const";
+
+        output += "Inside block:\n";
+        output += x + "\n";
+        output += y + "\n";
+        output += z + "\n";
+      }
+
+      output += "\nOutside block:\n";
+      output += x + "\n";
+
+      try {
+        output += y + "\n";
+      } catch (e) {
+        output += "y is not accessible outside block\n";
+      }
+
+      try {
+        output += z + "\n";
+      } catch (e) {
+        output += "z is not accessible outside block\n";
+      }
+    }
+
+    scopeDemo();
+
+    document.getElementById("output").innerText = output;
+  </script>
+</body>
+</html>

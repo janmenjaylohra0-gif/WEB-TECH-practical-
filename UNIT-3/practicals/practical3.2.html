@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Conditional Loops Demo</title>
+</head>
+<body>
+  <h2>JavaScript Loops</h2>
+  <pre id="output"></pre>
+
+  <script>
+    let output = "";
+
+    output += "FOR LOOP:\n";
+    for (let i = 1; i <= 5; i++) {
+      output += "Number: " + i + "\n";
+    }
+
+    output += "\nWHILE LOOP:\n";
+    let j = 2;
+    while (j <= 10) {
+      output += "Even Number: " + j + "\n";
+      j += 2;
+    }
+
+    output += "\nDO...WHILE LOOP:\n";
+    let k = 1;
+    do {
+      output += "Value: " + k + "\n";
+      k++;
+    } while (k <= 3);
+
+    document.getElementById("output").innerText = output;
+  </script>
+</body>
+</html>

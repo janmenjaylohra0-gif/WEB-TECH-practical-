@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Validation Example</title>
+</head>
+<body>
+  <h2>Registration Form</h2>
+
+  <form id="myForm" onsubmit="return validateForm()">
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username" oninput="checkUsername()"><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="text" id="email" name="email" oninput="checkEmail()"><br><br>
+
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" oninput="checkPassword()"><br><br>
+
+    <input type="submit" value="Register">
+  </form>
+
+  <script>
+    function checkUsername() {
+      let username = document.getElementById("username").value;
+      if (username.length < 3) {
+        alert("Username must be at least 3 characters long");
+      }
+    }
+
+    function checkEmail() {
+      let email = document.getElementById("email").value;
+      let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+      if (!pattern.test(email)) {
+        alert("Please enter a valid email address");
+      }
+    }
+
+    function checkPassword() {
+      let password = document.getElementById("password").value;
+      if (password.length < 6) {
+        alert("Password must be at least 6 characters long");
+      }
+    }
+
+    function validateForm() {
+      let username = document.getElementById("username").value;
+      let email = document.getElementById("email").value;
+      let password = document.getElementById("password").value;
+
+      if (username === "" || email === "" || password === "") {
+        alert("All fields must be filled out");
+        return false;
+      }
+
+      let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+      if (!pattern.test(email)) {
+        alert("Invalid email format");
+        return false;
+      }
+
+      if (password.length < 6) {
+        alert("Password too short");
+        return false;
+      }
+
+      alert("Form submitted successfully!");
+      return true;
+    }
+  </script>
+</body>
+</html>
