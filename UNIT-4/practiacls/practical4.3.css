@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+input, button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.task {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}

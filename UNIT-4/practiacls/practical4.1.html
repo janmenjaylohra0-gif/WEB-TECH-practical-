@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orange Facts</title>
+    <link rel="stylesheet" href="practical4.1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🍊 All About Oranges</h1>
+
+        <h3>Nutritional Benefits</h3>
+        <button onclick="toggleNutrition()">Show Nutrition Info</button>
+        <div id="nutrition" class="info-box hidden">
+            Oranges are rich in Vitamin C, fiber, and antioxidants. One orange provides about 70mg of Vitamin C.
+        </div>
+
+        <h3>Orange Varieties <button onclick="toggleVarieties()" id="arrowBtn">▼</button></h3>
+        <div id="varieties" class="info-box hidden">
+            Popular varieties include Navel, Valencia, Blood Orange, and Mandarin.
+        </div>
+
+        <h3>Fun Fact</h3>
+        <button onclick="highlightFact()">Highlight Fact</button>
+        <div id="fact" class="info-box">
+            Orange trees can live for over 100 years and produce fruit for decades!
+        </div>
+    </div>
+
+    <script src="practical4.1.js"></script>
+</body>
+</html>
