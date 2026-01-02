@@ -1,0 +1,53 @@
+<DOCTYPE html>
+<html>
+<head>
+    <title>HTML Form Example</title>
+</head>
+<body>
+    <h1 align="center">Student Registration Form</h1>
+    <hr>
+
+    <form action="#" method="post" align="center">
+        <label for="name"><b>Full Name:</b></label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <br><br>
+
+        <label for="email"><b>Email:</b></label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+        <b>Gender:</b><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+        <br><br>
+        <b>Hobbies:</b><br>
+        <input type="checkbox" id="reading" name="hobby" value="Reading">
+        <label for="reading">Reading</label>
+        <input type="checkbox" id="sports" name="hobby" value="Sports">
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="music" name="hobby" value="Music">
+        <label for="music">Music</label>
+        <br><br>
+        <label for="course"><b>Choose Your Course:</b></label>
+        <select id="course" name="course">
+            <option value="">--Select--</option>
+            <option value="bca">BCA</option>
+            <option value="btech">B.Tech</option>
+            <option value="bsc">B.Sc</option>
+            <option value="ba">B.A</option>
+        </select>
+        <br><br>
+        <label for="address"><b>Address:</b></label><br>
+        <textarea id="address" name="address" rows="4" cols="40" placeholder="Enter your address"></textarea>
+        <br><br>
+
+        <!-- Submit & Reset Buttons -->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+    <hr>
+</body>
+</html>
